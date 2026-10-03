@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas B </h1>
+    <p> SIMA adalah sistem informasi mahasiswa yang berisi data mahasiswa yang mencakup berbagai informasi terkait mahasiswa berisi npm, prodi, nama, dan lain lain Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium at sapiente quasi non officiis? Quasi incidunt neque magni ea consectetur laudantium, ullam ut repellat. Ex culpa praesentium quidem sint nisi!
+    Rerum quia debitis impedit, perspiciatis, velit assumenda vero fugiat, adipisci earum repellendus maxime ab. Est doloribus inventore tempora, reprehenderit quasi nisi sapiente unde nulla deserunt voluptate nesciunt, aperiam ullam aliquid.
+    Ea quia esse consequatur tenetur placeat reiciendis debitis dolore excepturi maxime ullam, doloremque optio a error voluptas, odit corrupti numquam commodi deserunt asperiores. Eius aut pariatur quaerat, neque id veniam.
+    Nam sunt nobis sed ipsa in obcaecati alias, voluptas iste aliquid minima? Nulla est tenetur illo ad quasi a obcaecati repudiandae quo earum? Dolores molestiae dicta voluptatum labore temporibus expedita.
+    Id incidunt cumque magni modi, laborum reiciendis quibusdam quos, tenetur et nihil recusandae officiis optio laudantium, maiores nobis sed delectus nam praesentium. Fuga mollitia suscipit placeat temporibus. Modi, natus. Eius.
+</p>
+<img src="./foto.jpeg" alt="Rahman ganteng" width="300" height="400">
+<hr>
+<nav> <a href="#Informasi">Informasi Aplikasi</a> | <a href="#daftar-mahasisa">Daftar Mahasiswa</a> | <a href="#tambah Mahasiswa">Tambah Mahasiswa</a> 
+</nav>
+<hr>
+<main>
+    <section id="Informasi">
+        <h2>Informasi Sistem</h2>
+        <p>Aplikasi ini digunakan untuk mengelola data mahasiswa, termasuk menambahkan, mengedit, dan menghapus informasi mahasiswa. Aplikasi ini juga menyediakan fitur pencarian dan filter untuk memudahkan pengguna dalam menemukan data mahasiswa yang diinginkan.
+        </p>
+        <article>
+            <h3>Fitur Utama</h3>
+            <ul>
+                <li>Menambahkan data mahasiswa baru</li>
+                <li>Mengedit data mahasiswa yang sudah ada</li>
+                <li>Menghapus data mahasiswa</li>
+                <li>Pencarian dan filter data mahasiswa</li>
+            </ul>        
+        </article>
+    </section>
+    <hr>
+    <section id="daftar-mahasisa">
+        <h2>Daftar Mahasiswa AKtif</h2>
+        <P> Berikut adalah daftar mahasiswa yang sedang aktif:
+        </P>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Foto</th>
+                    <th>NPM</th>
+                    <th>Nama Lengkap</th>
+                    <th>Program Studi</th>
+                    <th>Angkatan</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="./foto.jpeg" alt="Rahman ganteng" width="40" height="60"></td>
+                    <td>1234567890</td>
+                    <td>Rahman</td>
+                    <td>Teknik Informatika</td>
+                    <td>2024</td>
+                    <td>rahman@example.com</td>
+                </tr>
+
+                 <tr>
+                    <td>2</td>
+                    <td><img src="./foto.jpeg" alt="Bintang jelek" width="40" height="60"></td>
+                    <td>2468101214</td>
+                    <td>Bintang</td>
+                    <td>Teknik Informatika</td>
+                    <td>2023</td>
+                    <td>Bintang@example.com</td>
+                </tr>
+
+                 <tr>
+                    <td>3</td>
+                    <td><img src="./foto.jpeg" alt="Rahman ganteng" width="40" height="60"></td>
+                    <td>369121518</td>
+                    <td>Hafiz</td>
+                    <td>Teknik Informatika</td>
+                    <td>2020</td>
+                    <td>hafiz@example.com</td>
+                </tr>
+            </tbody>
+    </section>
+        <hr>
+    <section id="form-tambah">
+        <h2>Tambah Mahasiswa Baru</h2>
+        <p>Formulir berikut digunakan untuk menambahkan data mahasiswa baru ke dalam sistem:
+        </p>
+        <form action="#" method="post">
+           <fieldset>
+               <legend></legend>
+               <label for="npm">Nomor Pokok Mahasiswa</label><br>
+               <input type="text" id="npm" name="npm" placeholder="1234567890" required pattern="[0-9]{8,12}" title="NPM harus berupa angka 8-12 digit"><br><br><small></small>
+
+               <label for="nama">Nama Lengkap:</label><br>
+               <input type="text" id="nama" name="nama" placeholder="Contoh : RAhman Hidayat" required minlength="3" maxlength="100"><br><br> <small></small>
+
+               <label for="program studi">Program Studi:</label><br>
+               <select id="program studi" name="program studi" required>
+                   <option value="">Pilih Program Studi</option>
+                   <option value="Teknik Informatika">Teknik Informatika</option>
+                   <option value="Sistem Informasi">Sistem Informasi</option>
+               </select><small></small>
+    
+               <label for="angkatan"> Tahun Angkatan:</label><br>
+               <input type="number" id="angkatan" name="angkatan" placeholder="Contoh : 2024" required min="2018" max="2026"><br><br> <small></small>
+
+               <label for="email"> Alamat Email:</label><br>
+               <input type="email" id="email" name="email" placeholder="contoh@example.com" required><br><br><small>
+               
+                <button type="submit">Simpan Data Mahasiswa</button>
+                <button type="reset">Reset Formulir</button>
+           </fieldset>
+           <input type="submit" value="Tambah Mahasiswa">
+        </form>
+</main>
+</body>
+</html>
